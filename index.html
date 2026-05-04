@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Centro Holístico Prananimal</title>
+  <title>Inicio | Centro Holístico Prananimal</title>
 
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/616/616408.png">
-
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- ICONOS -->
@@ -16,7 +15,6 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
 <!-- HEADER -->
@@ -24,15 +22,17 @@
 
   <div class="header__logo">
     <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" class="header__icon">
-    <span>Prananimal</span>
+    <span class="logo-text">
+    <span class="logo-prana">Prana</span><span class="logo-animal">nimal</span>
+    </span>
   </div>
 
   <button class="header__toggle"><i class="bi bi-list"></i></button>
 
   <nav class="header__menu">
-    <a href="#" class="header__item link-terapias">Terapias</a>
-    <a href="#" class="header__item link-enfermedades">Enfermedades</a>
-    <a href="#" class="header__item link-contacto">Contacto</a>
+    <a href="#Terapias" class="header__item link-terapias">Terapias</a>
+    <a href="#Enfermedades" class="header__item link-enfermedades">Enfermedades</a>
+    <a href="#Contacto" class="header__item link-contacto">Contacto</a>
   </nav>
 
 </header>
@@ -90,7 +90,7 @@
   <!-- PILARES -->
   <section class="pillars">
     <div class="pillars__item"><h2>Energía</h2><p>Restauración del flujo energético natural.</p></div>
-    <div class="pillars__item"><h2>Terapia</h2><p>Enfoques complementarios respetuosos.</p></div>
+    <div class="pillars__item"><h2>Armonización</h2><p>Proceso terapéutico que equilibra la energía del animal.</p></div>
     <div class="pillars__item"><h2>Vínculo</h2><p>Conexión profunda con su guía humano.</p></div>
   </section>
 
@@ -108,7 +108,7 @@
       <div class="therapy">
         <i class="bi bi-brightness-high"></i>
         <h3>Sanación Pránica</h3>
-        <p>Limpieza energética y apoyo físico y emocional.</p>
+        <p>Limpieza energética con apoyo físico y emocional.</p>
       </div>
 
       <div class="therapy">
@@ -132,7 +132,6 @@
       <div class="disease">Trastornos emocionales</div>
     </div>
   </section>
-
 </main>
 
 <!-- CONTACTO -->
@@ -152,7 +151,7 @@
     </div>
 
     <form class="contact__form">
-      <input type="text" placeholder="Nombre de quien reserva" required>
+      <input type="text" placeholder="Nombre de quién reserva" required>
       <input type="text" placeholder="Nombre del paciente" required>
       <input type="number" placeholder="Edad del paciente" required>
       <input type="text" placeholder="Especie" required>
