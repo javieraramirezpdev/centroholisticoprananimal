@@ -1,4 +1,4 @@
-/* RESET */
+/* HOME */
 * {
   margin: 0;
   padding: 0;
@@ -8,189 +8,293 @@
 
 /* BASE */
 body {
-  background-color: #f4f6f3;
-  color: #2f3a34;
+  background-color: #f6f1eb;
+  color: #3e3a36;
 }
 
-/* ================= HEADER ================= */
+/* === HEADER === */
 .header {
-  background-color: #3b2f2f; /* café oscuro elegante */
-  padding: 15px 40px;
+  background-color: #6b4f3f; /* café otoñal */
+  padding: 10px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header__logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   color: #fff;
-  font-weight: 600;
 }
 
 .header__icon {
-  width: 35px;
+  width: 28px;
+}
+
+.header__logo span {
+  font-size: 1.1rem;
 }
 
 .header__menu {
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
 .header__item {
   color: #f3e9d2;
   text-decoration: none;
   font-size: 0.9rem;
-  transition: 0.3s;
 }
 
 .header__item:hover {
-  color: #ffffff;
+  opacity: 0.8;
 }
 
-/* ================= SLIDER ================= */
+/* HAMBURGUESA */
+.header__toggle {
+  display: none;
+  font-size: 1.6rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* === SLIDER === */
 .slider {
   position: relative;
 }
 
+.carousel-item {
+  position: relative;
+}
+
 .slider__img {
-  height: 500px;
+  width: 100%;
+  height: 420px;
   object-fit: cover;
 }
 
-/* Overlay oscuro suave */
 .slider__overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.35);
-  z-index: 1;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
 }
 
-/* Texto slider */
 .slider__caption {
-  z-index: 2;
+  position: absolute;
+  bottom: 20%;
 }
 
 .slider__title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-/* ================= CONTENT ================= */
+/* === CONTENT === */
 .content {
+  max-width: 1100px;
+  margin: auto;
   padding: 60px 20px;
   text-align: center;
 }
 
+/* === ESPACIADO GENERAL === */
+section {
+  margin-top: 60px;
+}
+
+/* === TITULOS === */
 .content__title {
-  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+}
+
+.section__title {
+  font-size: 1.8rem;
   margin-bottom: 30px;
-  font-weight: 700;
 }
 
-/* ================= FRASES ================= */
-.phrases {
-  margin-bottom: 50px;
-}
-
+/* === FRASES === */
 .phrases__text {
-  font-size: 1.2rem;
   font-style: italic;
   opacity: 0.8;
 }
 
-/* ================= PILARES ================= */
+/* === PILARES === */
 .pillars {
+  margin-top: 40px;
   display: flex;
-  justify-content: center;
-  gap: 25px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .pillars__item {
-  background: white;
-  padding: 30px;
+  background: #ffffff;
+  padding: 25px;
   width: 260px;
   border-radius: 12px;
-  transition: all 0.4s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border: 1px solid #e5ddd5;
+  line-height: 1.4;
 }
 
-.pillars__item:hover {
-  transform: translateY(-10px);
+/* === TERAPIAS === */
+.therapies {
+  margin-top: 60px;
 }
 
-.pillars__item--highlight {
-  background: #e8f2ec;
+.therapies__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-.pillars__title {
-  font-weight: 600;
+.therapy {
+  background: #fff;
+  padding: 25px;
+  width: 260px;
+  border-radius: 12px;
+  border: 1px solid #e5ddd5;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.therapy i {
+  font-size: 30px;
+  color: #a67c52;
   margin-bottom: 10px;
 }
 
-/* ================= CTA ================= */
-.cta {
+/* === QUÉ ENFERMEDADES SE TRATA === */
+.diseases {
   margin-top: 60px;
 }
 
-.cta__title {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+.diseases__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
+.disease {
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #e5ddd5;
+}
+
+/* === CONTACTO === */
+.contact {
+  margin-top: 60px;
+}
+
+.contact__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact__info p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.contact__info i {
+  color: #a67c52;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 280px;
+}
+
+.contact__form input,
+.contact__form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* BOTONES */
+.contact__form button,
 .cta__button {
-  padding: 12px 35px;
-  border: none;
-  background-color: #7fa98f;
+  background-color: #a67c52;
   color: white;
-  border-radius: 30px;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
   cursor: pointer;
-  transition: 0.3s;
-  font-weight: 500;
 }
 
+.contact__form button:hover,
 .cta__button:hover {
-  background-color: #6c927c;
+  opacity: 0.85;
 }
 
-/* ================= FOOTER ================= */
+/* === FOOTER === */
 .footer {
-  background-color: #3b2f2f;
-  color: #f3e9d2;
-  padding: 20px;
-  text-align: center;
   margin-top: 60px;
+  background-color: #6b4f3f;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-/* ================= RESPONSIVE ================= */
+/* === RESPONSIVO === */
 @media (max-width: 768px) {
 
   .header {
-    flex-direction: column;
-    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .header__toggle {
+    display: block;
   }
 
   .header__menu {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .header__menu.active {
+    display: flex;
+  }
+
+  .slider__img {
+    height: 250px;
+  }
+
+  .slider__title {
+    font-size: 1.4rem;
+  }
+
+  .contact__container {
     flex-direction: column;
     align-items: center;
   }
 
-  .slider__img {
-    height: 300px;
-  }
+}
 
-  .slider__title {
-    font-size: 1.6rem;
-  }
+.contact__link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
 
-  .content__title {
-    font-size: 2rem;
-  }
-
+.contact__link:hover {
+  opacity: 0.7;
 }
